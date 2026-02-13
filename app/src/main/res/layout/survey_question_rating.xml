@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp">
+
+    <!-- Question Number and Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_question_number"
+            style="@style/SurveyQuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Q1." />
+
+        <TextView
+            android:id="@+id/tv_question_text"
+            style="@style/SurveyQuestionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Question text goes here" />
+    </LinearLayout>
+
+    <!-- Custom Star Rating Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <!-- Custom star rating with individual stars -->
+        <LinearLayout
+            android:id="@+id/rating_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/star_1"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="6dp"
+                android:src="@android:drawable/star_big_off"
+                android:contentDescription="Star 1"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <ImageView
+                android:id="@+id/star_2"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="6dp"
+                android:src="@android:drawable/star_big_off"
+                android:contentDescription="Star 2"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <ImageView
+                android:id="@+id/star_3"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="6dp"
+                android:src="@android:drawable/star_big_off"
+                android:contentDescription="Star 3"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <ImageView
+                android:id="@+id/star_4"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="6dp"
+                android:src="@android:drawable/star_big_off"
+                android:contentDescription="Star 4"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <ImageView
+                android:id="@+id/star_5"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@android:drawable/star_big_off"
+                android:contentDescription="Star 5"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_rating_hint"
+            style="@style/SurveyHintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to rate"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#1A6366F1"
+        android:alpha="0.3" />
+</LinearLayout>

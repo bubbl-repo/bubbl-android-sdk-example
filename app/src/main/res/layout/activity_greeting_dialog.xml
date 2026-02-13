@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="24dp"
+        tools:context="tech.bubbl.sdk.utils.GreetingDialogActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvGreetingTitle"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification tapped"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- IMAGE path -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivNotificationImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- VIDEO path -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardVideo"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+
+                <WebView
+                    android:id="@+id/wvVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- AUDIO path -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPlayAudio"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPauseAudio"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pause"
+                        android:layout_marginStart="8dp"
+                        android:enabled="false"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- TEXT path -->
+            <TextView
+                android:id="@+id/tvGreetingMessage"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="…your message here…"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_horizontal"/>
+
+            <!-- OK button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnClose"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

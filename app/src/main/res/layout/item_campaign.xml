@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/campaign_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campaign Name" />
+
+    <TextView
+        android:id="@+id/campaign_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campaign ID"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/campaign_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/campaign_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/campaign_locations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locations"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/campaign_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

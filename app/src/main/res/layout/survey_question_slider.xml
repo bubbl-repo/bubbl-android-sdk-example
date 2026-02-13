@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/SurveyQuestionCard">
+
+    <!-- Question Number and Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_question_number"
+            style="@style/SurveyQuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Q1." />
+
+        <TextView
+            android:id="@+id/tv_question_text"
+            style="@style/SurveyQuestionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Question text goes here" />
+    </LinearLayout>
+
+    <!-- Slider Value Display -->
+    <TextView
+        android:id="@+id/tv_slider_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        android:textColor="@color/survey_primary"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Slider Labels Container -->
+    <LinearLayout
+        android:id="@+id/ll_slider_labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_slider_min_label"
+            style="@style/SurveyHintText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Min"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/tv_slider_max_label"
+            style="@style/SurveyHintText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Max"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <!-- Slider -->
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/survey_slider_height"
+        android:progressTint="@color/survey_slider_thumb"
+        android:thumbTint="@color/survey_slider_thumb"
+        android:progressBackgroundTint="@color/survey_slider_track" />
+</LinearLayout>

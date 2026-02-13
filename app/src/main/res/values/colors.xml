@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+        <!-- Survey Colors - Matching App's Material Theme -->
+        <color name="survey_primary">@color/purple_500</color>
+        <color name="survey_primary_dark">@color/purple_700</color>
+        <color name="survey_primary_light">#BB86FC</color>
+        <color name="survey_accent">@color/teal_200</color>
+        <color name="survey_accent_light">#80E8D8</color>
+
+        <!-- Backgrounds - Dark Theme -->
+        <color name="survey_background">#1E1E1E</color>
+        <color name="survey_card_background">#2D2D2D</color>
+
+        <!-- Text Colors - Dark Theme -->
+        <color name="survey_text_primary">#FFFFFF</color>
+        <color name="survey_text_secondary">#B0B0B0</color>
+        <color name="survey_text_hint">#808080</color>
+
+        <!-- Dividers & Borders - Dark Theme -->
+        <color name="survey_divider">#404040</color>
+        <color name="survey_border_light">#505050</color>
+
+        <!-- Choice States - Dark Theme -->
+        <color name="survey_choice_selected">#4A148C</color>
+        <color name="survey_choice_selected_border">@color/purple_500</color>
+        <color name="survey_choice_unselected">#3A3A3A</color>
+        <color name="survey_choice_unselected_border">#606060</color>
+        <color name="survey_choice_hover">#4A148C</color>
+
+        <!-- Rating -->
+        <color name="survey_rating_filled">#FBBF24</color>
+        <color name="survey_rating_unfilled">#E5E7EB</color>
+
+        <!-- Slider -->
+        <color name="survey_slider_track">#E2E8F0</color>
+        <color name="survey_slider_track_active">@color/purple_500</color>
+        <color name="survey_slider_thumb">@color/purple_500</color>
+
+        <!-- States -->
+        <color name="survey_success">#10B981</color>
+        <color name="survey_error">#EF4444</color>
+        <color name="survey_warning">#F59E0B</color>
+
+        <!-- Legacy compatibility (kept for backward compatibility) -->
+        <color name="survey_choice_border">#E2E8F0</color>
+        <color name="survey_choice_border_selected">@color/purple_500</color>
+</resources>

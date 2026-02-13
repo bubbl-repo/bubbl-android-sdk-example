@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MyBubblHost" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- If you already have brand colours, use them here -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <!-- These keep Material components (dialogs, etc.) happy -->
+        <item name="colorSurface">@android:color/white</item>
+        <item name="colorOnSurface">@android:color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Survey Dimensions -->
+    <dimen name="survey_question_spacing">20dp</dimen>
+    <dimen name="survey_card_padding">16dp</dimen>
+    <dimen name="survey_card_margin">8dp</dimen>
+    <dimen name="survey_card_radius">12dp</dimen>
+    <dimen name="survey_card_elevation">2dp</dimen>
+
+    <dimen name="survey_question_text_size">16sp</dimen>
+    <dimen name="survey_question_number_size">14sp</dimen>
+    <dimen name="survey_choice_text_size">15sp</dimen>
+    <dimen name="survey_hint_text_size">13sp</dimen>
+
+    <dimen name="survey_choice_padding">14dp</dimen>
+    <dimen name="survey_choice_radius">8dp</dimen>
+    <dimen name="survey_choice_margin">6dp</dimen>
+    <dimen name="survey_choice_border_width">1.5dp</dimen>
+
+    <dimen name="survey_rating_size">42dp</dimen>
+    <dimen name="survey_rating_spacing">4dp</dimen>
+
+    <dimen name="survey_slider_height">48dp</dimen>
+    <dimen name="survey_slider_label_size">14sp</dimen>
+
+    <dimen name="survey_submit_button_height">52dp</dimen>
+    <dimen name="survey_submit_button_margin_top">24dp</dimen>
+    <dimen name="survey_submit_button_text_size">16sp</dimen>
+</resources>

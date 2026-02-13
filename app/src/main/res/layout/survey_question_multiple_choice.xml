@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/SurveyQuestionCard">
+
+    <!-- Question Number and Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_question_number"
+            style="@style/SurveyQuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Q1." />
+
+        <TextView
+            android:id="@+id/tv_question_text"
+            style="@style/SurveyQuestionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Question text goes here" />
+    </LinearLayout>
+
+    <!-- Hint -->
+    <TextView
+        style="@style/SurveyHintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select all that apply"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Choices Container -->
+    <LinearLayout
+        android:id="@+id/choices_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Checkboxes will be added dynamically -->
+    </LinearLayout>
+</LinearLayout>

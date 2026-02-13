@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/SurveyQuestionCard">
+
+    <!-- Question Number and Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_question_number"
+            style="@style/SurveyQuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Q1." />
+
+        <TextView
+            android:id="@+id/tv_question_text"
+            style="@style/SurveyQuestionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Question text goes here" />
+    </LinearLayout>
+
+    <!-- Text Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SurveyTextInputLayout"
+        android:hint="Your answer">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="6"
+            android:gravity="top|start"
+            android:textSize="@dimen/survey_choice_text_size"
+            android:textColor="@color/survey_text_primary"
+            android:textColorHint="@color/survey_text_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
