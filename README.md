@@ -29,9 +29,17 @@ from `bubbl-docs-redocly`.
    - `BUBBL_MAVEN_USER`
    - `BUBBL_MAVEN_TOKEN`
 
+If credentials are not set, Gradle also checks `BUBBL_ANDROID_SDK_LOCAL_MAVEN`
+and defaults to `../../bubbl-current/sdk/bubbl-android-sdk-standalone/sdk/build/localMaven`.
+That path works after publishing the SDK locally:
+
+```bash
+cd /path/to/bubbl-android-sdk-standalone
+./gradlew :sdk:publishReleasePublicationToLocalMavenRepository
+```
+
 ## Test
 
 ```bash
 ./gradlew test
 ```
-
