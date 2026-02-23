@@ -25,11 +25,9 @@ from `bubbl-docs-redocly`.
 
 1. Update `app/google-services.json` placeholders.
 2. Add Maps key in `app/src/main/AndroidManifest.xml` (replace `REPLACE_WITH_GOOGLE_MAPS_API_KEY`).
-3. If using GitHub Packages for private Android artifacts, set:
-   - `BUBBL_MAVEN_USER`
-   - `BUBBL_MAVEN_TOKEN`
+3. Android dependency resolution uses Bubbl Maven (`https://maven.bubbl.tech/repository/releases/`) with no username/password required.
 
-If credentials are not set, Gradle also checks `BUBBL_ANDROID_SDK_LOCAL_MAVEN`
+For local SDK override, Gradle checks `BUBBL_ANDROID_SDK_LOCAL_MAVEN`
 and defaults to `../../bubbl-current/sdk/bubbl-android-sdk-standalone/sdk/build/localMaven`.
 That path works after publishing the SDK locally:
 

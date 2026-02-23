@@ -27,19 +27,8 @@ dependencyResolutionManagement {
                 url = uri(localBubblSdkMavenDir)
             }
         }
-        val bubbMavenUser = providers.gradleProperty("BUBBL_MAVEN_USER").orNull
-            ?: System.getenv("BUBBL_MAVEN_USER")
-        val bubbMavenToken = providers.gradleProperty("BUBBL_MAVEN_TOKEN").orNull
-            ?: System.getenv("BUBBL_MAVEN_TOKEN")
-
-        if (!bubbMavenUser.isNullOrBlank() && !bubbMavenToken.isNullOrBlank()) {
-            maven {
-                url = uri("https://maven.pkg.github.com/bubbl-repo/bubbl-android-sdk")
-                credentials {
-                    username = bubbMavenUser
-                    password = bubbMavenToken
-                }
-            }
+        maven {
+            url = uri("https://maven.bubbl.tech/repository/releases/")
         }
     }
 }
